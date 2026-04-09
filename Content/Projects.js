@@ -30,13 +30,29 @@ for(let i = 0; i < contentImages.length; i++)
 {
     contentImages[i].addEventListener("click", ZoomInImage)
 }
+async function LoadPng(path) {
+    try {
+        const response = await fetch(path, { method: 'HEAD' });
+        return response.ok;
+    } catch (error) {
+        return false;
+    }
+}
 
-function ZoomInImage()
-{
-    const originalClientRect = this.getClientRects()[0]
-    const originalAspectRatio = originalClientRect.height / originalClientRect.width
+async function ZoomInImage() {
+    const originalClientRect = this.getClientRects()[0];
+    const originalAspectRatio = originalClientRect.height / originalClientRect.width;
 
-    ImageContent.src = this.src
+    let currentSRC = this.src;
+    if (currentSRC.includes("jpg")) {
+        let tempPath = currentSRC.replace("jpg", "png");
+        let pngExists = await LoadPng(tempPath);
+        
+        if (pngExists)
+            currentSRC = currentSRC.replace("jpg", "png")
+    }
+    
+    ImageContent.src = currentSRC
 
     ImageContent.style.height = "auto"
     ImageContent.style.width = "90%"

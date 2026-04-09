@@ -74,7 +74,8 @@
             "Thumbnail": "Assets/Images/Projects/Thumbnails/FOG.jpg",
             "Title": "FOG",
             "HtmlPage": "Projects/FOG",
-            "Description": "<a class=\"a-href-style\" href=\"https://www.foggame.com/\">FOG</a> an upcoming game by <a class=\"a-href-style\" href=\"https://www.invisiblewalls.co/\">Invisible Walls</a> is a Co-op roadtrip horror game set in 1992 soviet Russia. In FOG I worked on procedural world generation using much of Unreal Engine PCG framework",
+            "FogLinkDescription": "<a class=\"a-href-style\" href=\"https://www.foggame.com/\">FOG</a> an upcoming game by <a class=\"a-href-style\" href=\"https://www.invisiblewalls.co/\">Invisible Walls</a> is a Co-op roadtrip horror game set in 1992 soviet Russia. In FOG I worked on procedural world generation using much of Unreal Engine PCG framework",
+            "Description": "FOG an upcoming game by <a class=\"a-href-style\" href=\"https://www.invisiblewalls.co/\">Invisible Walls</a> is a Co-op roadtrip horror game set in 1992 soviet Russia. In FOG I worked on procedural world generation using much of Unreal Engine PCG framework",
             "SystemsUsed": [
                 {
                     "Name": "C++",
@@ -300,6 +301,34 @@
                 {
                     "Name": "ImGui",
                     "Color": "rgb(220, 220, 220)"
+                }
+            ]
+        },
+        {
+            "Thumbnail": "Assets/Images/Projects/Thumbnails/GrappleAscent.jpg",
+            "Title": "Grapple Ascent",
+            "HtmlPage": "Projects/GrappleAscent",
+            "Description": "Grapple Ascent is a 3D adventure game made in Unity. You are a yoyo climbing up a proceduraly generated Tower mountain. This game was made for <a class=\"a-href-style\" href=\"https://itch.io/jam/gmtk-2024\">GMTK Game Jam 2024</a>",
+            "SystemsUsed": [
+                {
+                    "Name": "C#",
+                    "Color": "rgb(200, 200, 113)"
+                },
+                {
+                    "Name": "Unity",
+                    "Color": "rgb(220, 220, 220)"
+                },
+                {
+                    "Name": "Github",
+                    "Color": "rgb(171, 186, 241)"
+                },
+                {
+                    "Name": "Visual Studio",
+                    "Color": "rgb(207, 190, 235)"
+                },
+                {
+                    "Name": "Blender",
+                    "Color": "rgb(210, 167, 162)"
                 }
             ]
         }

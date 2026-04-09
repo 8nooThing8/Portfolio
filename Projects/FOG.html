@@ -216,15 +216,15 @@
             </h1>
         </div>
 
-        <div class="project-text">
+        <div class="project-text" style="margin-top: 60px;">
             Attempt 1
         </div>
         <div class="project-text">
             Generating both trees and foliage is the same process just different amount and remove collisions for grass.
             The first way i did was just full terrain generation which worked and took not too long to generate.
             <br>
-            When tested the game ran terrible, the rason being the collisions of all trees in the map were tested at all times.
-            <br>
+            When I tested the game, it ran horrible, the rason being the collisions of all trees in the map were tested at all times.
+            <br><br>
             I did try to optimise it by only placing trees around the road but if you drove into the firest the trees would just end so would not work
         </div>
 
@@ -232,7 +232,7 @@
             <img src="/Assets/Images/Projects/Content/FOG/Map/TreesAttempt.jpg" class="content-image"/>
         </div>
 
-        <div class="project-text">
+        <div class="project-text" style="margin-top: 60px;">
             Attempt 2
         </div>
         <div class="project-text">
@@ -242,7 +242,7 @@
             This method helped alot with performance in game but when generating the game it could take up tp a full minute just for the trees to generate once.
         </div>
 
-        <div class="project-text">
+        <div class="project-text" style="margin-top: 60px;">
             Attempt 3
         </div>
         <div class="project-text">
@@ -268,7 +268,9 @@
         <div class="project-text">
             the very last element i created was a map to let the players be able to navigate the world.
             The process was easy by putting multiple scene captures one for each element, one for roads, one for buildings and last for objective.
-            <br><br>
+        </div>
+
+        <div class="project-text">
             Unreal has a scene capture component and only the road can render first then only render building icons.
             If we take all the output textures and add them onto eachother in a material we get a map that we can use.
         </div>
@@ -286,17 +288,40 @@
         <div class="project-text">
             With navigation comes challenges for knowing where you are like a landmark or a sign telling you where you are.
             They could have been done by just having a basic sign and scaling the text on them to match the default width, Thats boooring.
-            <br>
-            Thats were i got the idea of proceduraly generated signs using unreal PCG system. 
+        </div>
+
+        <div class="project-text">
+            This is where i got the idea of proceduraly generated signs using unreal PCG system. 
             I had quite a bit of experience in it with the forest, the road and more so creating it was fun and easy.
 
-            <br><br>
+        </div>
+
+        <div class="project-text">
             The result turned out great and the Text size is what determines the signs final width, the sign can also have varying height for more genuine feel.
             It also randomly crosses out the town name as if ahead is a ghost town
         </div>
 
         <div class="project-text content-image-holder">
-            <img src="/Assets/Images/Projects/Content/FOG/SignGenerator.gif" class="content-image"/>
+            <img src="/Assets/Images/Projects/Content/FOG/Misc/SignGenerator.gif" class="content-image"/>
+        </div>
+
+         <div class="project-text content-image-holder title-holder">
+            <h1 class="sub-title">
+                Closing Thoughts
+            </h1>
+        </div>
+
+        <div class="project-text">
+            Being able to work on something i have not worked on alot, Procedural Generation was incredibly fun.
+            With this i also got to learn a new system, Unreal Engine PCG system.
+
+            <br>
+            I was able to have alot of freedom of how the generation was done so i was able to research what the best solution would be and make it turn out great.
+            
+            <br>
+            <br>
+            Lastly i wanted to thank Invisible Walls for letting me work on their amazing games and work with all their amazing development team. 
+            I loved all the time i spent at the company.
         </div>
     </div>
 </body>
@@ -306,5 +331,5 @@
 
 <script src="/Content/ScreenManager.js" defer></script>
 <script src="/Content/Projects.js"></script>
-<script src="/Content/BreadcrumbConsoleBar.js" defer></script>
+<script src="/Content/TopBar.js" defer></script>
 <script src="/Content/BottomBar.js" defer></script>

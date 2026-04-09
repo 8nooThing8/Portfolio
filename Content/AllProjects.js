@@ -46,7 +46,7 @@ function SmoothPositionSwap() {
 
         setTimeout(() => {
             LerpToPosition(Featured, FromPosX, FromPosY, ToFinalPositionX, ToFinalPositionY, 0, FeaturedProject)
-        }, 300);
+        }, 500);
     }
 
     localStorage.setItem("CameFromHome", JSON.stringify(false));
@@ -64,7 +64,7 @@ function LerpToPosition(Object, FromPosX, FromPosY, ToPosX, ToPosY, CurrentProgr
     Object.style.left = LerpedX + "px"
     Object.style.top = LerpedY + "px"
 
-    CurrentProgress += 1/50;
+    CurrentProgress += 1/60;
 
     if(CurrentProgress >= 1) 
     {
