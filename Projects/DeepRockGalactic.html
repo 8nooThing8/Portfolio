@@ -11,7 +11,7 @@
     <div class="text-thumbnail-container">
         <div class="title-text-holder">
             <div class="title-text">
-                FOG
+                Deep Rock Galactic
             </div>
         </div>
         <img class="thumbnail" />
@@ -31,11 +31,12 @@
 
         <div class="project-text">
             Before my work only a small amount of damage modifier perks were in the game which made their implmentations simple and Temporary.
-            In the backend we have a list of healthtype that lines up with a list of modifiers and thresholds to modify damage.
-            When damaging something it checks the healthtype of the target to know damage modifiers.
+            I had to create a system that you can rely on and is abstract enough to be used alot in the future.
+            How it works is in the backend we have a container for general damage modifiers that has a condition and a multiplier that can be overwritten.
+            All the developer have to do is make a damage modifier and add it to the list with your own condition and multiplier when the modifier should be active.
             <br>
             <br>
-            In the front end where the designer balances these damage modifiers they use the Unreal Editor and a cuastom struct i created.
+            In the front end where the designer balances these damage modifiers they use the Unreal Editor and a custom struct i created.
         </div>
 
         <div class="project-text content-image-holder" style="width: 70%;">
@@ -49,16 +50,15 @@
         </div>
 
         <div class="project-text">
-            The finish them perk makes your damage multiply by X amount when the enemy is below X% damage.
+            The "Finish Them" perk makes your damage multiply by X amount when the enemy is below X% damage.
             The thresholds are different for small and big enemies to not make the perk too over powered.
-            <br>
-            <br>
-            The perk used global stat values originally for damage modifier and thresholds wich made it very specific for the perk at hand.
+            
+            <br><br>
+            The perk originaly had to use global values for damage modifier and thresholds which made it unsafe if you accidently edit it directly and made not much sense anyway.
             To scale it better with the games future, the damage modifier system was made like talked about above.
 
-            <br>
-            <br>
-            Currently multiplying damage by 4 times when the enemy has 50% health left, These values are exagurated for show.
+            <br><br>
+            Currently multiplying damage by 4 times when the enemy has less than 50% health left, These values are exagurated for show.
         </div>
 
         <div class="project-text content-image-holder" style="width: 70%;">

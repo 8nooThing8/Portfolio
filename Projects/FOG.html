@@ -38,10 +38,10 @@
         </div>
 
         <div class="project-text content-image-holder" style="width: 75%;">
-            <img src="/Assets/Images/Projects/Content/FOG/Terrain/TerrainTexture.png" class="content-image"/>
+            <img src="/Assets/Images/Projects/Content/FOG/Terrain/TerrainTexture.jpg" class="content-image"/>
         </div>
         <div class="project-text content-image-holder" style="width: 75%;">
-            <img src="/Assets/Images/Projects/Content/FOG/Terrain/TerrainTextureResult.png" class="content-image"/>
+            <img src="/Assets/Images/Projects/Content/FOG/Terrain/TerrainTextureResult.jpg" class="content-image"/>
         </div>
 
         <div class="project-text">
@@ -60,7 +60,7 @@
         </div>
 
         <div class="project-text content-image-holder" style="width: 75%;">
-            <img src="/Assets/Images/Projects/Content/FOG/Terrain/DugOutTerrain.png" class="content-image"/>
+            <img src="/Assets/Images/Projects/Content/FOG/Terrain/DugOutTerrain.jpg" class="content-image"/>
         </div>
 
         <div class="project-text">
@@ -81,8 +81,8 @@
 
         <div style="display: flex;">
             <div class="project-text content-image-holder" style="width: 100%;">
-                <img src="/Assets/Images/Projects/Content/FOG/Terrain/OnlyColor.png" class="content-image" style="width: 48.75%; margin-right: 2.5%;"/>
-                <img src="/Assets/Images/Projects/Content/FOG/Terrain/WithRoad.png" class="content-image" style="width: 48.75%;"/>
+                <img src="/Assets/Images/Projects/Content/FOG/Terrain/OnlyColor.jpg" class="content-image" style="width: 48.75%; margin-right: 2.5%;"/>
+                <img src="/Assets/Images/Projects/Content/FOG/Terrain/WithRoad.jpg" class="content-image" style="width: 48.75%;"/>
             </div>
         </div>
 
@@ -127,7 +127,7 @@
         </div>
 
         <div class="project-text content-image-holder" style="width: 75%;">
-            <img src="/Assets/Images/Projects/Content/FOG/Road/RoadEditor.png" class="content-image"/>
+            <img src="/Assets/Images/Projects/Content/FOG/Road/RoadEditor.jpg" class="content-image"/>
         </div>
 
         <div class="project-text">
@@ -138,7 +138,7 @@
         </div>
 
         <div class="project-text content-image-holder" style="width: 75%;">
-            <img src="/Assets/Images/Projects/Content/FOG/Road/Road-Mesh.png" class="content-image"/>
+            <img src="/Assets/Images/Projects/Content/FOG/Road/Road-Mesh.jpg" class="content-image"/>
         </div>
 
         <div class="project-text">
@@ -149,7 +149,7 @@
         </div>
 
         <div class="project-text content-image-holder" style="width: 45%;">
-            <img src="/Assets/Images/Projects/Content/FOG/Road/total-wall-time.png" class="content-image"/>
+            <img src="/Assets/Images/Projects/Content/FOG/Road/total-wall-time.jpg" class="content-image"/>
         </div>
 
         <div class="project-text">
@@ -157,7 +157,7 @@
         </div>
 
         <div class="project-text content-image-holder">
-            <img src="/Assets/Images/Projects/Content/FOG/Road/RoadGeneration.png" class="content-image"/>
+            <img src="/Assets/Images/Projects/Content/FOG/Road/RoadGeneration.jpg" class="content-image"/>
         </div>
 
         <div class="project-text">
@@ -168,7 +168,7 @@
         </div>
 
         <div class="project-text content-image-holder" style="width: 75%;">
-            <img src="/Assets/Images/Projects/Content/FOG/Road/Lightpoles.png" class="content-image"/>
+            <img src="/Assets/Images/Projects/Content/FOG/Road/Lightpoles.jpg" class="content-image"/>
         </div>
 
         <div class="project-text content-image-holder title-holder">
@@ -188,7 +188,7 @@
         </div>
 
         <div class="project-text content-image-holder" style="width: 75%;">
-            <img src="/Assets/Images/Projects/Content/FOG/FogBunkers/BunkersOpen.png" class="content-image"/>
+            <img src="/Assets/Images/Projects/Content/FOG/FogBunkers/BunkersOpen.jpg" class="content-image"/>
         </div>
 
         <div class="project-text">
@@ -224,6 +224,12 @@
             The first way i did was just full terrain generation which worked and took not too long to generate.
             <br>
             When tested the game ran terrible, the rason being the collisions of all trees in the map were tested at all times.
+            <br>
+            I did try to optimise it by only placing trees around the road but if you drove into the firest the trees would just end so would not work
+        </div>
+
+        <div class="project-text content-image-holder">
+            <img src="/Assets/Images/Projects/Content/FOG/Map/TreesAttempt.jpg" class="content-image"/>
         </div>
 
         <div class="project-text">
@@ -250,7 +256,7 @@
         </div>
 
         <div class="project-text content-image-holder">
-            <img src="/Assets/Images/Projects/Content/FOG/ForestLookingGood.png" class="content-image"/>
+            <img src="/Assets/Images/Projects/Content/FOG/ForestLookingGood.jpg" class="content-image"/>
         </div>
 
         <div class="project-text content-image-holder title-holder">
@@ -268,7 +274,29 @@
         </div>
 
         <div class="project-text content-image-holder" style="width: 40%;">
-            <img src="/Assets/Images/Projects/Content/FOG/Map/Map.png" class="content-image"/>
+            <img src="/Assets/Images/Projects/Content/FOG/Map/Map.jpg" class="content-image"/>
+        </div>
+
+        <div class="project-text content-image-holder title-holder">
+            <h1 class="sub-title">
+                Town Name Signs
+            </h1>
+        </div>
+
+        <div class="project-text">
+            With navigation comes challenges for knowing where you are like a landmark or a sign telling you where you are.
+            They could have been done by just having a basic sign and scaling the text on them to match the default width, Thats boooring.
+            <br>
+            Thats were i got the idea of proceduraly generated signs using unreal PCG system. 
+            I had quite a bit of experience in it with the forest, the road and more so creating it was fun and easy.
+
+            <br><br>
+            The result turned out great and the Text size is what determines the signs final width, the sign can also have varying height for more genuine feel.
+            It also randomly crosses out the town name as if ahead is a ghost town
+        </div>
+
+        <div class="project-text content-image-holder">
+            <img src="/Assets/Images/Projects/Content/FOG/SignGenerator.gif" class="content-image"/>
         </div>
     </div>
 </body>
