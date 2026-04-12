@@ -45,6 +45,41 @@
             <img src="/Assets/Images/Projects/Content/EclipsedEngine/EclipsedengineEditor.jpg" class="content-image"/>
         </div>
 
+        <div class="project-text content-image-holder title-holder">
+            <h1 class="sub-title">
+                Editor GameObject Childing
+            </h1>
+        </div>
+
+        <div class="project-text">
+            When editing a level in an engine it needs to have a nice process and no hassel.
+            The engine already had childing with transforms from previously and using matricies to multiply in one objects space into the parents space.
+
+            <br><br>
+            Making it child is easy, the problem comes with the unpredictable parents transform and places the child very differnt from where it was before.
+        </div>
+
+        <div class="project-text content-image-holder">
+            <img src="/Assets/Images/Projects/Content/EclipsedEngine/ChildingWeird.gif" class="content-image"/>
+        </div>
+
+        <div class="project-text">
+            When childed the object will move and apply all of its parents transforms, it's correct in terms of the computer doing what its told.
+            But its not what we want for a good feeling editor.
+
+        </div>
+
+        <div class="project-text">
+            To make it work I had to use more matrix calculations to multiply everything backwards in a way.
+            We multiply the inverse of the parents transform with the transform of the child.
+            <br>
+            This means we go out of the parents local space while still in world space to make it inversed.
+            When it then becomes a child of parent it still has an inversed transform and will then apply the childs old transform and thus will reset all the childs transform.
+            This means it kept everything the same visualy in the editor but internaly its moved, rotated and scaled to match what it was before.
+            
+            <br><br>
+            I hope this made somewhat sense if you are reading and would like me to explain more in detail/better send me an email at <a class="a-href-style" href="mailto:simon@pixi.nu">simon@pixi.nu</a>
+        </div>
 
         <div class="project-text content-image-holder title-holder">
             <h1 class="sub-title">
@@ -250,8 +285,6 @@
         <div class="project-text content-image-holder" style="width: 50%;">
             <img src="/Assets/Images/Projects/Content/EclipsedEngine/CopiedObject.png" class="content-image"/>
         </div>
-
-
 
 
         <div class="project-text content-image-holder title-holder">
