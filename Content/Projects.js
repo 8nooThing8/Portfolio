@@ -30,7 +30,7 @@ for(let i = 0; i < contentImages.length; i++)
 {
     contentImages[i].addEventListener("click", ZoomInImage)
 }
-async function LoadPng(path) {
+async function LoadFile(path) {
     try {
         const response = await fetch(path, { method: 'HEAD' });
         return response.ok;
@@ -44,12 +44,19 @@ async function ZoomInImage() {
     const originalAspectRatio = originalClientRect.height / originalClientRect.width;
 
     let currentSRC = this.src;
-    if (currentSRC.includes("jpg")) {
-        let tempPath = currentSRC.replace("jpg", "png");
-        let pngExists = await LoadPng(tempPath);
+    if (currentSRC.includes(".jpg")) {
+        let tempPath = currentSRC.replace(".jpg", ".png");
+        let pngExists = await LoadFile(tempPath);
         
         if (pngExists)
-            currentSRC = currentSRC.replace("jpg", "png")
+            currentSRC = currentSRC.replace(".jpg", ".png")
+    }
+    else if (currentSRC.includes(".gif")) {
+        let tempPath = currentSRC.replace(".gif", "High.gif");
+        let pngExists = await LoadFile(tempPath);
+        
+        if (pngExists)
+            currentSRC = currentSRC.replace(".gif", "High.gif")
     }
     
     ImageContent.src = currentSRC
