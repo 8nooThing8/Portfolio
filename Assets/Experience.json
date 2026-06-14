@@ -4,12 +4,22 @@
             "CompanyName": "Invisible Walls",
             "CompanyIcon": "Assets/Images/CompanyIcons/InvisibleWalls.png",
             "CompanyLink": "https://www.invisiblewalls.co/",
+            "Role": "Junior Game Programmer",
+            "TimeSpan": "May 2026 - Now",
+            "Info": [
+                "Working on more general gameplay and backend orianted features on most games Invisbe Walls works on with the highlight being Deep Rock Galactic"
+            ],
+            "LinkButtons": []
+        },
+        {
+            "CompanyName": "Invisible Walls",
+            "CompanyIcon": "Assets/Images/CompanyIcons/InvisibleWalls.png",
+            "CompanyLink": "https://www.invisiblewalls.co/",
             "Role": "Procedural Game Programmer (Intern)",
             "TimeSpan": "Sep 2025 - Apr 2026",
             "Info": [
                 "Worked alot with Procedural world generation using many of the Unreal Engines Procedural Content Generation Pipeline, mainly using Procedural Constent Graph",
-                "This was my first time in the professional game development industry and seing how things operate there was interesting and made me learn alot.",
-                "It's been an honor and an amazing opertunity to work with all the amazing people at Invisible Walls and their amazing games like one of my favorites being <br><a class=\"a-href-style accent-color\" href=\"https://www.neighborsgame.com/\"> Neighbors: Suburban Warfare </a>"
+                "This was my first time in the professional game development industry and seing how things operate there was interesting and made me learn alot."
             ],
             "LinkButtons": [
                 {

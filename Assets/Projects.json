@@ -280,7 +280,7 @@
             "Thumbnail": "Assets/Images/Projects/Thumbnails/TheBlackwoodProject.jpg",
             "Title": "The Blackwood Project",
             "HtmlPage": "Projects/TheBlackwoodProject",
-            "Description": "The Blackwood Project is a 3D Topdown horror shooter. The game was made in Tre Rader Kod, same engine as Stella & Orbit and Sprite.",
+            "Description": "The Blackwood Project is a 3D Topdown horror shooter. The game was made in Tre Rader Kod, a homemade engine made by the whole team with VRAK.",
             "SystemsUsed": [
                 {
                     "Name": "C++",
