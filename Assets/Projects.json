@@ -38,7 +38,7 @@
                 },
                 {
                     "Name": "Box2D",
-                    "Color": "rgb(230, 213, 118)"
+                    "Color": "rgb(200, 200, 113)"
                 },
                 {
                     "Name": "Asio•Boost",
@@ -329,6 +329,26 @@
                 {
                     "Name": "Blender",
                     "Color": "rgb(210, 167, 162)"
+                }
+            ]
+        },
+        {
+            "Thumbnail": "Assets/Images/Projects/Thumbnails/DiceSite.jpg",
+            "Title": "The Binding Of Isaac Dice Rooms",
+            "HtmlPage": "Projects/TheBindingOfIsaacDiceRooms",
+            "Description": "This was a simple project i made during night because i was bored, The reason being The Binding Of Isaac there are these dice shaped rooms and they do different things but are not implicitly stated so i made a fun and nice looking site to see what they do.",
+            "SystemsUsed": [
+                {
+                    "Name": "Html",
+                    "Color": "rgb(210, 167, 162)"
+                },
+                {
+                    "Name": "CSS",
+                    "Color": "rgb(171, 186, 241)"
+                },
+                {
+                    "Name": "JavaScript",
+                    "Color": "rgb(230, 213, 118)"
                 }
             ]
         }
